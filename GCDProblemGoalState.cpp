@@ -6,6 +6,9 @@ int gcd(int x,int y){
     if(x<y) return gcd(x,y%x);
     else return gcd(x%y,y);
 }
+int lcm(int x,int y){
+    return x*y/gcd(x,y);
+}
 
 int main()
 {
